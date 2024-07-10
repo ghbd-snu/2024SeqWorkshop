@@ -10,6 +10,7 @@ zcat SRR13281064_1.fastq.gz | less
 touch script.sh
 vi script.sh
 # i     _ 입력 시작
+#!/bin/bash
 # 샘플 이름들을 배열에 저장
 samples=(
     SRR13281064
@@ -40,6 +41,7 @@ featureCounts -T 4 -p -a /data/raw/ref/GCF_000069185.1_ASM6918v1_genomic.gtf -t 
 touch script2.sh
 vi script2.sh
 # i     _ 입력 시작
+#!/bin/bash
 samples=(
     SRR13281064
     SRR13281065
