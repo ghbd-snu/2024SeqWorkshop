@@ -34,7 +34,7 @@ do
              -S output_${sample}.sam
 done
 # :wq   _ vi 편집기에서 나가기
-nohup script.sh &
+nohup ./script.sh &
 ### 3. Counting
 featureCounts -T 4 -p -a /data/raw/ref/GCF_000069185.1_ASM6918v1_genomic.gtf -t gene -g gene_id -o featurecount_output_64 all_samples.sorted.64.bam
 touch script2.sh
@@ -65,4 +65,4 @@ do
                   /path/to/${sample}.sorted.bam
 done
 # :wq   _ vi 편집기에서 나가기
-nohup script.sh &
+nohup ./script2.sh &
