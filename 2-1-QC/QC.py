@@ -1,4 +1,4 @@
-1) FastQC
+1) Fastp
 import os
 
 # Combined list of new IDs
